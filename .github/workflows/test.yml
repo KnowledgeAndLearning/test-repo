@@ -1,0 +1,11 @@
+name: test-reviewer
+on:
+ workflow_dispatch:
+ 
+jobs:
+  DEV:
+   runs-on: ubuntu-latest
+   environment: dev
+   steps:
+     - name: Deploying Application
+       run: echo "Deploying Application Successfully"
